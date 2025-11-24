@@ -1,12 +1,14 @@
-package com.devlusk.recipeapp
+package com.devlusk.recipeapp.screens.recipe
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.devlusk.recipeapp.data.model.Category
+import com.devlusk.recipeapp.data.remote.apiService
 import kotlinx.coroutines.launch
 
-class MainViewModel : ViewModel() {
+class RecipeViewModel : ViewModel() {
     private val _categorieState = mutableStateOf(RecipeState())
     val categoriesState: State<RecipeState> = _categorieState
 

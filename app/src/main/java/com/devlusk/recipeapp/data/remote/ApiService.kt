@@ -1,5 +1,6 @@
-package com.devlusk.recipeapp
+package com.devlusk.recipeapp.data.remote
 
+import com.devlusk.recipeapp.data.model.CategoryResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET

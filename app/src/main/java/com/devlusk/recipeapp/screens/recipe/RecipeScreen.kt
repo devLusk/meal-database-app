@@ -1,4 +1,4 @@
-package com.devlusk.recipeapp
+package com.devlusk.recipeapp.screens.recipe
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -23,10 +23,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil3.compose.AsyncImage
+import com.devlusk.recipeapp.data.model.Category
 
 @Composable
 fun RecipeScreen(modifier: Modifier = Modifier) {
-    val recipeViewModel: MainViewModel = viewModel()
+    val recipeViewModel: RecipeViewModel = viewModel()
     val viewState by recipeViewModel.categoriesState
 
     Box(modifier = modifier.fillMaxSize()) {

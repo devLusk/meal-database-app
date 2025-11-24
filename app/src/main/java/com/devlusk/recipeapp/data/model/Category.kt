@@ -1,4 +1,4 @@
-package com.devlusk.recipeapp
+package com.devlusk.recipeapp.data.model
 
 data class Category(
     val idCategory: String,
