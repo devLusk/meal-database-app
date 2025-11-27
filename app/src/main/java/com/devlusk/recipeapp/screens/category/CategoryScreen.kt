@@ -15,7 +15,6 @@ import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -29,11 +28,9 @@ import com.devlusk.recipeapp.data.model.Category
 @Composable
 fun CategoryScreen(
     modifier: Modifier = Modifier,
+    viewState: CategoryViewModel.CategoryState,
     navigateToDetail: (Category) -> Unit
 ) {
-    val categoryViewModel: CategoryViewModel = viewModel()
-    val viewState by categoryViewModel.categoriesState
-
     Box(modifier = modifier.fillMaxSize()) {
         when {
             viewState.loading -> {

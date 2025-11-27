@@ -9,8 +9,8 @@ import com.devlusk.recipeapp.data.remote.apiService
 import kotlinx.coroutines.launch
 
 class CategoryViewModel : ViewModel() {
-    private val _categorieState = mutableStateOf(RecipeState())
-    val categoriesState: State<RecipeState> = _categorieState
+    private val _categorieState = mutableStateOf(CategoryState())
+    val categoriesState: State<CategoryState> = _categorieState
 
     init {
         fetchCategories()
@@ -34,7 +34,7 @@ class CategoryViewModel : ViewModel() {
         }
     }
 
-    data class RecipeState(
+    data class CategoryState(
         val loading: Boolean = true,
         val list: List<Category> = emptyList(),
         val error: String? = null
