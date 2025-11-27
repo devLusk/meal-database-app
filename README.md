@@ -8,7 +8,8 @@ It uses **TheMealDB API** to fetch and display meal categories.
 ## 📸 Preview
 
 <div align="center">
-  <img src="images/image.png" alt="App preview"/>
+<img src="images/image.png" alt="App preview"/>
+<img src="images/image-detail.png" alt="App preview"/>
 </div>
 
 ---
